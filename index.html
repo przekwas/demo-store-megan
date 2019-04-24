@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- jumnbo fluid -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white shadow-lg">
+        <div class="container">
+            <h1 class="display-4">Helping Megan!</h1>
+            <p class="lead">Watching Luke fail at Bootstrap.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="text-center text-light my-2">
+            <span class="p-2 bg-dark shadow rounded" id="feedback">Thanks for Ordering all 'dat shit!</span>
+        </div>
+        <section class="row justify-content-center">
+
+            <!-- grocery list -->
+            <div class="card m-1 p-2 shadow" id="main">
+                <h5 class="text-center mb-2">Store</h5>
+                <ul class="list-group shadow-sm" id="main-list"></ul>
+            </div>
+            <!-- /grocery list ends -->
+
+            <!-- cart list -->
+            <div class="card m-1 p-2 shadow" id="side">
+                <h5 class="text-center">Cart</h5>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <th scope="col">Item</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Dollars</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="text-center">
+                    <div class="mb-2"><b>Total: </b><span class="text-monospace" id="total">$0</span></div>
+                    <button onclick="submitCart()" class="btn btn-sm btn-primary shadow w-75">Submit</button>
+                </div>
+            </div>
+            <!-- /card list ends -->
+
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
